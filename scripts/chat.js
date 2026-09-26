@@ -19,7 +19,7 @@ function addAishMsg(content = "", finish = false) {
     const messageEl = document.createElement("div");
     messageEl.className = "aish-message";
     messageEl.innerHTML = `
-        <div class="content">${marked.parse(escapeHTML(content))}</div>
+        <div class="content">${escapeHTML(marked.parse(content))}</div>
         <div class="unformatted-content">${escapeHTML(content)}</div>
         <div class="options" style="display: none;">
             <button title="Copy answer" class="copy-answer-button"><img src="https://easy.maltion.com/icons/Copy-Black.png"></button>
